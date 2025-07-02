@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathesh Venkatesan | Cloud & DevOps Enthusiast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #1c1c1c, #121212);
+    }
+    .bitmoji {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border:  4px solid #00adb5;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px #00adb5aa;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #00adb5;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: #eeeeee;
+    }
+    p {
+      max-width: 700px;
+      margin: 10px auto 20px;
+      line-height: 1.6;
+    }
+    .location {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .btn {
+      padding: 12px 24px;
+      margin: 8px;
+      background: #00adb5;
+      color: #0f0f0f;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #00777f;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #00adb5;
+      text-align: center;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      box-shadow: 0 0 8px #00adb530;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 15px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00adb560;
+    }
+    .education {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact-info {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .social-icons a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #00adb5;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    .skill {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 0 8px #00adb530;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .skill:hover {
+    box-shadow: 0 0 15px #00adb5, 0 0 25px #00adb5aa;
+    transform: scale(1.05);
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="jpeg-optimizer_1000214591.jpg" alt="Profile Image" class="bitmoji" />
+    <h1>Mathesh Venkatesan</h1>
+    <div class="location">Chennai, Tamil Nadu, India</div>
+    <h2>Cloud & DevOps Enthusiast</h2>
+    <p>Aspiring IT professional with a passion for technology and a recent graduate with a degree in MCA. Eager to kick-start my career in IT, offering a quick learning ability, dedication to customer satisfaction, and a commitment to resolving technical issues efficiently.</p>
+    <a href="Mathesh-resume.pdf" class="btn" download>Download Resume</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <section id="skills">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Git</div>
+      <div class="skill">Linux</div>
+      <div class="skill">Docker</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Jenkins</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Online GatePass Management System - ASP.NET (2024)</h3>
+        <p>The Gate Pass Management System is a web-based application that provides an interface for applying and managing the entries and exits of students in an institution.</p>
+      </div>
+      <div class="project-card">
+        <h3>Data migration in cloud servers during disaster using cryptography - ASP.NET (2025)</h3>
+        <p>A company's critical data being continuously replicated and stored in a remote cloud server during disaster.</p>
+      </div>
+      <div class="project-card">
+        <h3>Hosting a Website on Amazon S3 – AWS</h3>
+        <p>S3 Bucket is used to host the static web application content. Key features of S3 include low latency, high throughput, and high durability. S3 auto-scales for storage needs.</p>
+      </div>
+       <div class="project-card">
+        <h3>Data Visualization using Amazon QuickSight</h3>
+        <p>Created interactive dashboards using Netflix data with Amazon QuickSight, AWS’s cloud-based business intelligence tool.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p>2023 – 2025<br />Bishop Heber College, Trichy</p>
+    </div>
+    <div class="education">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p>2020 – 2023<br />Bishop Heber College, Trichy</p>
+    </div>
+  </section>
+
+   <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Master Cloud Program - Besant Technologies, Chennai</h3>
+        <p>Completed a professional course covering Linux, AWS, and DevOps fundamentals and practices.</p>
+      </div>
+      <div class="project-card">
+        <h3>Web Designing with HTML & CSS - T4Teq Software Solutions, Trichy</h3>
+        <p>Completed training in front-end web design with a focus on HTML and CSS fundamentals.</p>
+      </div>
+    </div>
+  </section>
+
+   
+
+  
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <p>You can connect with me here:</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mathesh-venkatesan-534209310/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/mathesh-24" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> mathesh2403@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 99441 51272</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mathesh Venkatesan. Built with HTML & CSS.</p>
+  </footer>
+</body>
+</html>
+
