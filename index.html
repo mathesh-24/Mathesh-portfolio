@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mathesh Venkatesan | Cloud & DevOps Enthusiast</title>
+  <title>Mathesh Venkatesan | IT & Software Engineer @ goPLIMS</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
@@ -97,6 +97,11 @@
       border-radius: 20px;
       font-weight: 600;
       box-shadow: 0 0 8px #00adb530;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .skill:hover {
+      box-shadow: 0 0 15px #00adb5, 0 0 25px #00adb5aa;
+      transform: scale(1.05);
     }
     .projects {
       display: grid;
@@ -142,54 +147,33 @@
       margin-top: 40px;
       font-size: 0.9rem;
     }
-    .skill {
-    background: #1c1c1c;
-    border: 1px solid #333;
-    padding: 12px 20px;
-    border-radius: 20px;
-    font-weight: 600;
-    box-shadow: 0 0 8px #00adb530;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-
-  .skill:hover {
-    box-shadow: 0 0 15px #00adb5, 0 0 25px #00adb5aa;
-    transform: scale(1.05);
-  }
     @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  .skills-grid,
-  .projects {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bitmoji {
-    width: 120px;
-    height: 120px;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-}
-
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .skills-grid,
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+      .bitmoji {
+        width: 120px;
+        height: 120px;
+      }
+      section {
+        padding: 40px 15px;
+      }
+      .project-card {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -197,8 +181,8 @@
     <img src="jpeg-optimizer_1000214591.jpg" alt="Profile Image" class="bitmoji" />
     <h1>Mathesh Venkatesan</h1>
     <div class="location">Chennai, Tamil Nadu, India</div>
-    <h2>Cloud & DevOps Enthusiast</h2>
-    <p>Aspiring IT professional with a passion for technology and a recent graduate with a degree in MCA. Eager to kick-start my career in IT, offering a quick learning ability, dedication to customer satisfaction, and a commitment to resolving technical issues efficiently.</p>
+    <h2>IT & Software Engineer @ goPLIMS</h2>
+    <p>Currently working at <strong>goPLIMS</strong>, where I’m learning and contributing to cloud instance creation, software deployment, and server maintenance. My role involves supporting the setup of cloud-based environments, transferring files between servers using WinSCP, and using PuTTY to access remote systems. I also assist in database setup, module testing on staging servers, and maintaining our cloud infrastructure.</p>
     <a href="Mathesh-resume.pdf" class="btn" download>Download Resume</a>
     <a href="#contact" class="btn">Contact Me</a>
   </header>
@@ -214,6 +198,26 @@
       <div class="skill">Docker</div>
       <div class="skill">SQL</div>
       <div class="skill">Jenkins</div>
+      <div class="skill">WinSCP</div>
+      <div class="skill">PuTTY</div>
+      <div class="skill">Tomcat</div>
+      <div class="skill">Nginx</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="project-card">
+      <h3>goPLIMS – IT & Software Engineer</h3>
+      <p><em>2025 – Present</em></p>
+      <ul>
+        <li>Setting up and maintaining cloud-based environments for product instances.</li>
+        <li>Handling software deployment, staging server testing, and production rollout.</li>
+        <li>Using <strong>WinSCP</strong> for secure file transfers between servers.</li>
+        <li>Accessing and managing remote systems using <strong>PuTTY</strong>.</li>
+        <li>Supporting database setup and module integration.</li>
+        <li>Monitoring and maintaining cloud infrastructure for performance and stability.</li>
+      </ul>
     </div>
   </section>
 
@@ -232,7 +236,7 @@
         <h3>Hosting a Website on Amazon S3 – AWS</h3>
         <p>S3 Bucket is used to host the static web application content. Key features of S3 include low latency, high throughput, and high durability. S3 auto-scales for storage needs.</p>
       </div>
-       <div class="project-card">
+      <div class="project-card">
         <h3>Data Visualization using Amazon QuickSight</h3>
         <p>Created interactive dashboards using Netflix data with Amazon QuickSight, AWS’s cloud-based business intelligence tool.</p>
       </div>
@@ -251,7 +255,7 @@
     </div>
   </section>
 
-   <section id="certifications">
+  <section id="certifications">
     <h2 class="section-title">Certifications</h2>
     <div class="projects">
       <div class="project-card">
@@ -265,9 +269,6 @@
     </div>
   </section>
 
-   
-
-  
   <section id="contact">
     <h2 class="section-title">Contact</h2>
     <div class="contact">
@@ -288,4 +289,3 @@
   </footer>
 </body>
 </html>
-
